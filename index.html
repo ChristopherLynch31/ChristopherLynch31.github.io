@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='portfolio.css' rel='stylesheet' />
+    </head>
+    <body>
+        <script>
+            let today = new Date();
+            let hourNow = today.getHours();
+            let greeting;
+    
+            if(hourNow > 17) {
+                greeting = '<div class="words"><div class="greet">Good Evening, my name is Christopher Lynch</div> <br /> <div class="an">Front-End Developer</div><div><br />Welcome to my Portfolio</div></div>';
+            } else if(hourNow > 11) {
+                greeting = '<div class="words"><div class="greet">Good Afternoon, my name is Christopher Lynch</div> <br /> <div class="an">Front-End Developer</div><div><br />Welcome to my Portfolio</div></div>';
+            } else if(hourNow >= 0) {
+                greeting = '<div class="words"><div class="greet">Good Morning, my name is Christopher Lynch</div> <br /> <div class="an">Front-End Developer</div><div><br />Welcome to my Portfolio</div></div>';
+            } else {
+                greeting = '<div class="words"><div class="greet">Hello, my name is Christopher Lynch</div> <br /> <div class="an">Front-End Developer</div><div><br />Welcome to my Portfolio</div></div>';
+            }
+    
+            document.write ('<h3>' + greeting + '</h3>'); 
+        </script>
+        <div class="nav">
+            <a href="portfolio.html" class="navItem">Home</a>
+            <a href="About.html" class="navItem">About</a>
+            <a href="Contact.html" class="navItem">Contact</a>
+        </div>
+    </body>
+</html>
