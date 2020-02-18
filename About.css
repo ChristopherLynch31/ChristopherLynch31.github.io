@@ -1,6 +1,6 @@
 
 body {
-    background-color: silver;
+    background-color: grey;
 }
 
 .nav {
@@ -77,4 +77,5 @@ a:active {
     font-size: x-large;
     color: white; 
 }
+
 
